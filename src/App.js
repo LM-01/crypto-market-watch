@@ -8,7 +8,9 @@ import CoinListing from './components/CoinListing';
 // [X] - Page Layout
 // [X] - Styling
 // [X] - Search
-// [] - Attribution and details
+// [X] - Attribution and details
+
+// Future Development
 // [] - Export to CSV feature
 
 function App() {
@@ -17,10 +19,10 @@ function App() {
 
   const baseUrl = 'https://api.coingecko.com/api/v3'
   const marketUrl = '/coins/markets'
-  //https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
+  
   useEffect(()=> {
     const url = baseUrl+marketUrl
-    console.log(url)
+    // console.log(url)
     axios
       .get(url, {
         params: {
@@ -37,10 +39,6 @@ function App() {
       .catch(error => console.log(error))
   },[])
 
-  // useEffect(()=> {
-  //   console.log(search)
-  // },[search])
-
   function handleSearch(e){
     setSearch(e.target.value)
   }
@@ -54,7 +52,7 @@ function App() {
         <h1>Crypto Market Watch</h1>
       </div>
       <div className='search-container'>
-        <input placeholder='Search' value={search} onChange={handleSearch}></input>
+        <input placeholder='Try out the search' value={search} onChange={handleSearch}></input>
       </div>
       <div className='listing-container'>
         <div className='listing-header-row'>
@@ -76,7 +74,11 @@ function App() {
           
         </div>
       </div>
-      
+      <div style={{textAlign:'center'}}>
+        <br/>
+        Create by <a href='https://github.com/LM-01'>Lester Mollinedo</a><br/><br/>
+        Thanks to <a href='https://www.coingecko.com/en'>CoinGecko</a> for their amazing Api!
+      </div>
     </div>
     </>
   );
