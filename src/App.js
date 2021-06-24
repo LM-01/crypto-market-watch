@@ -6,8 +6,8 @@ import CoinListing from './components/CoinListing';
 //TODO
 // [X] - Request Data
 // [X] - Page Layout
-// [] - Styling
-// [] - Search
+// [X] - Styling
+// [X] - Search
 // [] - Attribution and details
 // [] - Export to CSV feature
 
@@ -50,22 +50,24 @@ function App() {
   return (
     <>
     <div className='container'>
-      <h1>Crypto Market Watch</h1>
+      <div className='header'>
+        <h1>Crypto Market Watch</h1>
+      </div>
       <div className='search-container'>
         <input placeholder='Search' value={search} onChange={handleSearch}></input>
       </div>
       <div className='listing-container'>
         <div className='listing-header-row'>
-          <span>image</span>
-          <span>name</span>
-          <span>price</span>
-          <span>circulating-supply</span>
-          <span>max-supply,</span>
-          <span>price-change-24h</span>
-          <span>price-change-1y</span>
-          <span>market_cap</span>     
+          <span>Icon</span>
+          <span>Name</span>
+          <span>Current Price</span>
+          <span>circulating supply</span>
+          <span>Max Supply</span>
+          <span>% Change 24h</span>
+          <span>% Change 1 Year</span>
+          <span>Market Cap</span>     
         </div>
-        <div className='listing-coin-row'>
+        <div>
           {filteredCoins.map(coin => {
             return (
               <CoinListing {...coin} key={coin.id} />
