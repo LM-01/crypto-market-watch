@@ -19,8 +19,8 @@ Future Developments:
 
 ### Screenshot
 
-![Desktop Design](./images/screenshot.PNG)
-![Desktop Design in Use](./images/screenshot2.PNG)
+![Desktop Design](images/screenshot.PNG)
+![Desktop Design in Use](images/screenshot2.PNG)
 
 ### Links
 

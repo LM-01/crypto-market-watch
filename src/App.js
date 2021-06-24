@@ -76,7 +76,7 @@ function App() {
       </div>
       <div style={{textAlign:'center'}}>
         <br/>
-        Create by <a href='https://github.com/LM-01'>Lester Mollinedo</a><br/><br/>
+        Created by <a href='https://github.com/LM-01'>Lester Mollinedo</a><br/><br/>
         Thanks to <a href='https://www.coingecko.com/en'>CoinGecko</a> for their amazing Api!
       </div>
     </div>
