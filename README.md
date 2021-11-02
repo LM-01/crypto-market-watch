@@ -18,8 +18,6 @@ Future Developments: <br/>
 
 - Live Site URL: [Live Site](https://jovial-swartz-68f10e.netlify.app/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
