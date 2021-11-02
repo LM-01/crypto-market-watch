@@ -1,26 +1,18 @@
 # Crypto Market Watch - API Project
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-
 ## Overview
 
 An application that works with the CoinGecko Api to display the most important information from the top crypto coins/projects.
 
-Future Developments:
-[] CSV Export Feature
-[] Pagination
-[] Mobile Design Optimization
+Future Developments: <br/>
+[] CSV Export Feature<br/>
+[] Pagination<br/>
+[] Mobile Design Optimization<br/>
 
 ### Screenshot
 
-![Desktop Design](images/screenshot.PNG)
-![Desktop Design in Use](images/screenshot2.PNG)
+![Desktop Design](src/images/screenshot.PNG)
+![Desktop Design in Use](src/images/screenshot2.PNG)
 
 ### Links
 
